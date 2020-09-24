@@ -29,7 +29,6 @@ class ProductController extends Controller
 
         if ($photo) {
             $file_name = date('Ymdhis').$photo->getClientOriginalName();
-
             $photo->move(public_path('images'), $file_name);
         }
 

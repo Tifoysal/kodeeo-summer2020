@@ -17,7 +17,7 @@
         @foreach($products as $product)
         <tr>
             <th scope="row">1</th>
-            <th><img width="20%" src="{{url('images/'.$product->image)}}" alt=""></th>
+            <th><img width="100px;" src="{{url('images/'.$product->image)}}" alt="product image"></th>
             <td>{{$product->name}}</td>
             <td>{{$product->price}}</td>
             <td>{{$product->qty}}</td>
